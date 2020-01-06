@@ -1,0 +1,45 @@
+@import './vars.scss';
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  color: $med-gray;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: $light-gray;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+input {
+  min-height: 30px;
+  padding: $padding-small $padding-regular;
+  background-color: $white;
+  border: $border-style;
+  border-radius: 3px;
+  color: $black;
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  color: $blue;
+  font-size: $h1-font-size;
+  font-weight: bold;
+}
+
+h2 {
+  color: $white;
+  font-size: $h2-font-size;
+  font-weight: normal;
+}
+
+h3 {
+  color: $dark-gray;
+  font-size: $h2-font-size;
+  font-weight: normal;
+}

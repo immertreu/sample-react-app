@@ -1,0 +1,52 @@
+@import './vars';
+
+$footer-height: 50px;
+
+@mixin container {
+  padding: $padding-regular $padding-large;
+}
+
+@mixin header {
+  @include container;
+  background-color: $blue;
+  text-align: center;
+}
+
+@mixin page {
+  @include container;
+  padding-top: $padding-xlarge;
+  margin-bottom: $footer-height;
+
+  h1 {
+    margin-bottom: $padding-xlarge;
+  }
+}
+
+@mixin footer {
+  @include container;
+  height: $footer-height;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark-gray;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: $white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@mixin button {
+  padding: $padding-regular $padding-xlarge;
+  background-color: $blue;
+  border: $border-style;
+  border-radius: 7px;
+  color: $white;
+  font-size: $h2-font-size;
+}
+

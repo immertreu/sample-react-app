@@ -1,0 +1,38 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.header {
+  @include header;
+  background: #3fafff;
+}
+
+.page {
+  @include page;
+}
+
+.fieldWrapper {
+  padding-bottom: $padding-large;
+
+  .fieldInput {
+    width: 100%;
+    margin-bottom: $padding-small;
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+
+  .errorText {
+    color: $red;
+  }
+}
+
+.buttonWrapper {
+  padding: $padding-regular $padding-xlarge;
+
+  .loginButton {
+    @include button;
+    width: 100%;
+  }
+}
+

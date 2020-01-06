@@ -1,0 +1,76 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.header {
+  @include header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .headerAddButton {
+    background: none;
+    border: none;
+    color: $white;
+    font-size: $h1-font-size;
+  }
+}
+
+.page {
+  @include page;
+}
+
+.footer {
+  @include footer;
+
+  .footerAddButton {
+    height: 30px;
+    width: 30px;
+    background: $blue;
+    border: none;
+    border-radius: 50%;
+    color: $white;
+    font-size: $h2-font-size;
+    font-weight: normal;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+.deviceWrapper {
+  display: flex;
+  align-items: center;
+  padding: $padding-regular;
+  margin-bottom: $padding-large;
+  border: $border-style;
+  border-radius: 5px;
+  background-color: $white;
+
+  .deviceId {
+    padding: $padding-regular 15px;
+    margin-right: $padding-regular;
+    background-color: $light-gray;
+    border: $border-style;
+    border-radius: 3px;
+    color: $dark-gray;
+    font-size: $h1-font-size;
+  }
+
+  .deviceDeleteButton {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    background-color: $red;
+    border: $border-style;
+    border-radius: 50%;
+    color: $white;
+    font-size: $h1-font-size;
+    line-height: 37px;
+    text-align: center;
+  }
+}
+
+.headerAddButton,
+.deviceDeleteButton,
+.footerAddButton {
+  cursor: pointer;
+}
